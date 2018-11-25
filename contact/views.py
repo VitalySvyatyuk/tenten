@@ -5,14 +5,13 @@ from .forms import ContactForm
 
 class ContactView(FormView):
     form_class = ContactForm
-    template_name = 'contact/contact.html'       
+    template_name = 'contact/contact.html'
+    success_url = '/success/'    
 
     def form_valid(self, form):
-        import pdb; pdb.set_trace()
         print(form)
         return super().form_valid(form)
 
     def form_invalid(self, form):
-        import pdb; pdb.set_trace()
         print(form.errors)
         return super().form_invalid(form)

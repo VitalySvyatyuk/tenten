@@ -1,0 +1,12 @@
+{% extends 'contact/base.html' %}
+
+{% block title%}Success Page{% endblock %}
+
+{% block body %}
+  <body class="text-center">
+    <form action="/contact/" class="form-send">
+      <h1 class="h3 mb-3 font-weight-normal">Message has been sent!</h1>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Return to contact page</button>
+    </form>
+  </body>
+{% endblock %}

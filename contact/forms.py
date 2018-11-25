@@ -1,4 +1,4 @@
-from django.forms import Form, CharField, EmailField, Textarea, RegexField
+from django.forms import Form, CharField, EmailField, Textarea, RegexField, BooleanField
 
 class ContactForm(Form):
     first_name = CharField(required=True, min_length=2, max_length=50)
