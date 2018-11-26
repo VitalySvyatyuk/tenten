@@ -16,7 +16,7 @@
       {{ form.errors.phone_number }}
       <input type="text" name="subject" class="form-control" placeholder="Subject" value="{{ form.data.subject }}"required>
       {{ form.errors.subject }}
-      <textarea form="sendForm" name="message" class="form-control txtarea" placeholder="Message">{{ form.data.message }}</textarea>
+      <textarea form="sendForm" name="message" class="form-control txtarea" placeholder="Message" required>{{ form.data.message }}</textarea>
       {{ form.errors.message }}
       <div class="checkbox mb-3">
         <label>
